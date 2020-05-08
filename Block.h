@@ -19,17 +19,10 @@ class Block{
     int block16[4][4];
     int block17[4][4];
     int block18[4][4];
-    int posX,posY;//方块左上角坐标
-    int speed;//下落速度
     int blockA[4][4],blockB[4][4];
-    bool check;
    public:
-     void printBlock();//打印方块
-     void clearBlock();//消除方块
-     void roundBlock();//随机生成方块并打印
-     bool collisionDetection();//检测是否碰撞
-     void myLeft();//左移
-     void myRight();//右移
-     void myUp();//顺时针旋转90度
-     int myDown();//加速下落
+    void initDatasPerSquare();//俄罗斯方块的迭代
+     void drawItem();//单个方块的绘制函数
+     void drawSquareNow();//当前俄罗斯方块绘制
+     void drawSquareNext();//下一个俄罗斯方块绘制
 };
